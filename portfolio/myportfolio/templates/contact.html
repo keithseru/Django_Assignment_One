@@ -29,17 +29,21 @@
         </div>
     </nav>
 
-    <div class="container mt-4 shadow p-5">
-        <div class="card mb-4 p-4 d-flex flex-column justify-content-center align-items-center bg-dark text-white">
-            <h2 class="fw-bold">My Contacts</h2>
-            <p class="fw-bold">Email: <span
-                    class="text-decoration-underline text-primary">kseruyange@student.refactory.academy</span></p>
-            <p class="fw-bold">Phone Number: <span
-                    class="text-decoration-underline text-primary">+256-774-123-321</span></p>
+    <div class="container p-5">
+        <div class="card bg-dark text-white mx-auto p-3" style="width: 400px;">
+            <h4 class="fw-semibold mb-3 text-center">My Contacts</h4>
+            <p class="mb-2 text-center">
+                <strong>Email:</strong>
+                <span class="text-decoration-underline text-primary">kseruyange@student.refactory.academy</span>
+            </p>
+            <p class="mb-0 text-center">
+                <strong>Phone:</strong>
+                <span class="text-decoration-underline text-primary">+256-774-123-321</span>
+            </p>
         </div>
 
     </div>
-    <div class="container vh-60 d-flex flex-column justify-content-center align-items-center mt-5">
+    <div class="container vh-60 d-flex flex-column justify-content-center align-items-center">
         <h2 class="shadow p-3 rounded bg-dark text-white">Contact Me</h2>
         <form class="shadow p-5 bg-dark text-white rounded" action="/contact/" method="post">
             {% csrf_token%}
