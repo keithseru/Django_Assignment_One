@@ -20,8 +20,8 @@ from myportfolio.views import homePage, aboutMe, educationPage, contactPage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', homePage),
-    path('about/', aboutMe),
-    path('education/', educationPage),
-    path('contact/', contactPage),
+    path('', homePage, name='home'),
+    path('about/', aboutMe, name='about'),
+    path('education/', educationPage, name='education'),
+    path('contact/', contactPage, name='contact'),
 ]
